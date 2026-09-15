@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FBF9F5;
+  --foreground: #063737;
+  --color-dusty-blush: #E8C9CF;
+  --color-deep-teal: #063737;
+  --color-warm-rust: #A25524;
+  --color-olive-gold: #808000;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Midcentury Touch Light Grid Background */
+.midcentury-grid {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(6, 55, 55, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(6, 55, 55, 0.035) 1px, transparent 1px);
+}
+
+/* Glowing Accent Effects using Midcentury palette */
+.glow-teal {
+  box-shadow: 0 10px 30px -5px rgba(6, 55, 55, 0.25), 0 4px 12px -2px rgba(6, 55, 55, 0.15);
+}
+
+.glow-rust {
+  box-shadow: 0 10px 30px -5px rgba(162, 85, 36, 0.25), 0 4px 12px -2px rgba(162, 85, 36, 0.15);
+}
+
+.glow-olive {
+  box-shadow: 0 10px 30px -5px rgba(128, 128, 0, 0.25), 0 4px 12px -2px rgba(128, 128, 0, 0.15);
+}
+
+/* Custom Clean Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F2EFE9;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5CEBF;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A25524;
+}
