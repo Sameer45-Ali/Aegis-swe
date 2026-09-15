@@ -71,7 +71,7 @@ Where:
 - $c = \sqrt{2} \approx 1.414$ is the exploration constant.
 
 ### Composite Reward Function $R \in [0.0, 1.0]$:
-$$R = R_{\text{patch\_applied}} (0.2) + R_{\text{repro\_passed}} (0.5) + R_{\text{regression\_suite}} (0.3) - \text{Penalty}_{\text{syntax/timeout}}$$
+$$R = 0.20 \cdot R_{\mathrm{patch}} + 0.50 \cdot R_{\mathrm{repro}} + 0.30 \cdot R_{\mathrm{regression}} - P_{\mathrm{penalty}}$$
 
 ---
 
